@@ -70,12 +70,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: const TextStyle(color: Colors.white, fontSize: 13),
                     items: const [
                       DropdownMenuItem(
-                        value: "gemini-3.6-flash",
-                        child: Text("🌟 Gemini 3.6 Flash (Primary Reasoning)"),
+                        value: "gemini-3.5-flash",
+                        child: Text("⚡ Gemini 3.5 Flash (Default - Fast)"),
                       ),
                       DropdownMenuItem(
-                        value: "gemini-3.5-flash",
-                        child: Text("⚡ Gemini 3.5 Flash (Fast Execution)"),
+                        value: "gemini-3.6-flash",
+                        child: Text("🌟 Gemini 3.6 Flash (Deep Reasoning)"),
                       ),
                     ],
                     onChanged: (val) {

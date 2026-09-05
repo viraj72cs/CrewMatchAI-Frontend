@@ -37945,11 +37945,11 @@ gXO(){var s=this.a
 if(s instanceof A.eS)return s
 return this.a=new A.eS(s)},
 garG(){var s,r,q,p,o,n=this
-if(n.c===1)return B.pk
+if(n.c===1)return B.pj
 s=n.d
 r=J.bx(s)
 q=r.gE(s)-J.dp(n.e)-n.f
-if(q===0)return B.pk
+if(q===0)return B.pj
 p=[]
 for(o=0;o<q;++o)p.push(r.h(s,o))
 p.$flags=3
@@ -43001,7 +43001,7 @@ if(o!=null){n.toString
 o=A.pd(new A.aiV(q,p),null,t.z)
 A.d6(n,!1).afz(A.aqs(o,B.jh,!1,null),new A.aiW())}else n.af(t.Pu).f.ww(A.Og(null,null,null,null,null,B.N,null,A.b3(p.d,null,null,null,null,null,null,null),null,B.hu,null,null,null,null,null,null,null,null,null,null))}return A.R(null,r)}})
 return A.S($async$x5,r)},
-H(a){var s=this,r=null,q=A.Ir(r,B.XY),p=A.bL(16),o=A.eE(B.bX,1),n=t.p
+H(a){var s=this,r=null,q=A.Ir(r,B.XX),p=A.bL(16),o=A.eE(B.bX,1),n=t.p
 p=A.b([A.bC(r,A.bK(A.b([B.Ej,B.Ah,A.cb(B.KJ,B.W,B.q,B.r)],n),B.x,B.q,B.r,0),B.m,r,r,new A.bo(B.aj,r,o,p,r,r,B.H),r,r,r,B.bu,r,r,r),B.fI,B.Yb,B.cG],n)
 o=s.a.c.b
 B.b.N(p,new A.a1(o,new A.aiX(),A.X(o).i("a1<1,e>")))
@@ -43012,7 +43012,7 @@ o=s.d?r:s.ga6w()
 n=A.lW(r,r,B.a7,r,r,r,r,r,r,r,r,r,B.hw,r,r,r,r,r,r,r)
 p.push(A.d9(A.K5(s.d?B.RK:B.Yc,o,n),r,1/0))
 p.push(B.ca)
-p.push(A.d9(A.awd(B.XX,new A.aiY(a),A.aa6(r,r,r,r,r,r,r,r,r,B.ax,r,r,B.hv,r,r,r,r,r,r,r)),r,1/0))
+p.push(A.d9(A.awd(B.XW,new A.aiY(a),A.aa6(r,r,r,r,r,r,r,r,r,B.ax,r,r,B.hv,r,r,r,r,r,r,r)),r,1/0))
 return A.uf(q,A.afg(A.cb(p,B.W,B.q,B.r),r,B.ay,B.bu,r,B.ar),r)}}
 A.aiT.prototype={
 $0(){return this.a.d=!0},
@@ -43043,7 +43043,7 @@ p=A.Z(new A.a1(p,new A.a_o(),A.X(p).i("a1<1,e>")),t.l7)
 p.push(B.G9)
 s=t.p
 p.push(A.bK(A.b([B.XI,A.b3("\u20b9"+B.d.a5(this.d,0),r,r,r,r,B.AM,r,r)],s),B.x,B.b4,B.r,0))
-return A.uf(r,A.ue(!0,new A.bv(B.hB,A.cb(A.b([q,B.ef,B.XO,B.dg,o,B.iK,A.bC(r,A.cb(p,B.x,B.q,B.r),B.m,r,r,new A.bo(B.aj,r,m,n,r,r,B.H),r,r,r,B.f0,r,r,r),B.iK,A.d9(A.K5(B.Y4,new A.a_p(a),A.lW(r,r,B.w,r,r,r,r,r,r,r,r,r,B.hw,r,r,r,r,r,r,r)),r,1/0)],s),B.x,B.i4,B.r),r),B.ab,!0),r)}}
+return A.uf(r,A.ue(!0,new A.bv(B.hB,A.cb(A.b([q,B.ef,B.XO,B.dg,o,B.iK,A.bC(r,A.cb(p,B.x,B.q,B.r),B.m,r,r,new A.bo(B.aj,r,m,n,r,r,B.H),r,r,r,B.f0,r,r,r),B.iK,A.d9(A.K5(B.Y3,new A.a_p(a),A.lW(r,r,B.w,r,r,r,r,r,r,r,r,r,B.hw,r,r,r,r,r,r,r)),r,1/0)],s),B.x,B.i4,B.r),r),B.ab,!0),r)}}
 A.a_o.prototype={
 $1(a){var s=null
 return new A.bv(B.GN,A.bK(A.b([B.oX,B.ee,A.b3(a.c+": "+a.b,s,s,s,s,B.iS,s,s)],t.p),B.x,B.q,B.r,0),s)},
@@ -43083,7 +43083,7 @@ q=this.c
 q.toString
 A.aFx(new A.ajW(p,this,new A.uK(new A.cF(s,B.iR,B.bf),r)),q,t.z)},
 H(a){var s=this,r=null,q=t.p,p=A.cb(A.b([B.XH,A.bK(A.b([B.HY,B.RG,A.b3("Online \u2022 "+$.nX,r,r,r,r,B.Wk,r,r)],q),B.x,B.q,B.r,0)],q),B.W,B.q,B.r),o=A.b([A.th(r,r,B.p_,r,r,s.gahh(),r,r,"Switch Model / Server IP")],q),n=s.x
-if(n.a!=null&&n.b!=null&&n.e!=null&&n.f!=null&&n.r!=null)o.push(new A.Cv(!0,new A.ak1(s,a),r,r,r,r,B.m,r,!1,r,!0,r,new A.WC(B.XV,B.oX,r,r,r),r))
+if(n.a!=null&&n.b!=null&&n.e!=null&&n.f!=null&&n.r!=null)o.push(new A.Cv(!0,new A.ak1(s,a),r,r,r,r,B.m,r,!1,r,!0,r,new A.WC(B.XU,B.oX,r,r,r),r))
 p=A.Ir(o,p)
 o=A.b([],q)
 if(n.gHj()>0)o.push(A.bC(r,A.cb(A.b([A.bK(A.b([A.b3("Event Extraction Progress",r,r,r,r,B.UC,r,r),A.b3(""+B.d.hi(n.gHj()*100)+"%",r,r,r,r,B.AP,r,r)],q),B.x,B.b4,B.r,0),B.eg,A.a0p(A.bL(4),new A.zD(4,n.gHj(),B.nT,r,B.BJ,r,r,r),B.bV)],q),B.x,B.q,B.r),B.m,B.aj,r,r,r,r,r,B.GT,r,r,r))
@@ -43139,7 +43139,7 @@ $1(a){return new A.mZ(new A.ajV(this.a,this.b,this.c),null)},
 $S:121}
 A.ajV.prototype={
 $2(a,b){var s=null,r=A.bL(16),q=A.bK(B.Kr,B.x,B.q,B.r,0),p=A.bL(12),o=A.eE(A.ae(B.d.aK(76.5),B.w.u()>>>16&255,B.w.u()>>>8&255,B.w.u()&255),1),n=this.a,m=this.c,l=t.p
-p=A.cb(A.b([B.XB,B.eg,A.bC(s,new A.t2(A.azQ(B.aj,!0,B.pj,new A.ajS(n,b),B.AT,n.a,t.N),s),B.m,s,s,new A.bo(B.dC,s,o,p,s,s,B.H),s,s,s,B.oh,s,s,s),B.cH,B.B1,B.eg,A.awA(m,A.a5B(s,new A.fH(4,A.bL(12),B.jF),s,B.hz,s,s,s,s,!0,s,s,s,s,s,s,B.dC,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,!0,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s),s,B.B_)],l),B.W,B.q,B.bd)
+p=A.cb(A.b([B.XB,B.eg,A.bC(s,new A.t2(A.azQ(B.aj,!0,B.po,new A.ajS(n,b),B.AT,n.a,t.N),s),B.m,s,s,new A.bo(B.dC,s,o,p,s,s,B.H),s,s,s,B.oh,s,s,s),B.cH,B.B1,B.eg,A.awA(m,A.a5B(s,new A.fH(4,A.bL(12),B.jF),s,B.hz,s,s,s,s,!0,s,s,s,s,s,s,B.dC,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,!0,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s),s,B.B_)],l),B.W,B.q,B.bd)
 return A.ayJ(A.b([A.agp(B.B2,new A.ajT(a),s),A.K5(B.Y9,new A.ajU(n,this.b,m,a),A.lW(s,s,B.w,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s))],l),B.aj,p,new A.cg(r,B.o),q)},
 $S:122}
 A.ajS.prototype={
@@ -43249,7 +43249,7 @@ H(a){var s,r,q=this,p=null,o=A.bK(B.JO,B.x,B.q,B.r,0),n=t.p
 o=A.Ir(A.b([A.th(p,p,B.I2,p,p,q.gahj(),p,p,"Server IP Config"),A.th(p,p,B.I8,p,p,new A.amE(),p,p,p)],n),o)
 s=A.bL(20)
 r=A.b([new A.bp(0,B.R,A.ae(B.d.aK(76.5),B.w.u()>>>16&255,B.w.u()>>>8&255,B.w.u()&255),B.lz,16)],t.E)
-n=A.afg(A.cb(A.b([B.XJ,B.iL,B.XN,B.cH,A.bC(p,A.cb(A.b([A.bK(A.b([A.bC(p,B.I6,B.m,p,p,new A.bo(A.ae(51,B.i.u()>>>16&255,B.i.u()>>>8&255,B.i.u()&255),p,p,p,p,p,B.cz),p,p,p,B.ki,p,p,p),B.iJ,B.XC],n),B.x,B.q,B.r,0),B.cG,A.b3("Describe your event in natural language and let Gemini AI match, reason, and build the perfect crew for you.",p,p,p,p,A.e0(p,p,A.ae(B.d.aK(229.5),B.i.u()>>>16&255,B.i.u()>>>8&255,B.i.u()&255),p,p,p,p,p,p,p,p,14,p,p,p,p,1.4,!0,p,p,p,p,p,p,p,p),p,p),B.cH,A.d9(A.avz(B.oY,B.Y_,new A.amF(a),A.lW(p,p,B.i,p,p,p,0,p,p,B.w,p,p,p,p,p,p,p,p,p,p)),p,1/0)],n),B.W,B.q,B.r),B.m,p,p,new A.bo(p,p,p,s,r,B.IM,B.H),p,p,p,B.f0,p,p,p),B.ef,A.bK(A.b([q.N0(B.HC,new A.amG(),"30 Available","My Crews"),B.iJ,q.N0(B.Hz,new A.amH(),"3 Active","My Events")],n),B.x,B.q,B.r,0),B.ef,A.bK(B.L1,B.x,B.b4,B.r,0),B.cG,q.MY("\u20b946,578","5 Crew Members","15 September 2026 \u2022 Pune","Confirmed",B.a7,"Wedding Event"),B.ca,q.MY("\u20b935,000","3 Crew Members","24 May 2026 \u2022 Bengaluru","Planning",B.nV,"Tech Conference")],n),B.W,B.q,B.r),p,B.ay,B.bu,p,B.ar)
+n=A.afg(A.cb(A.b([B.XJ,B.iL,B.XN,B.cH,A.bC(p,A.cb(A.b([A.bK(A.b([A.bC(p,B.I6,B.m,p,p,new A.bo(A.ae(51,B.i.u()>>>16&255,B.i.u()>>>8&255,B.i.u()&255),p,p,p,p,p,B.cz),p,p,p,B.ki,p,p,p),B.iJ,B.XC],n),B.x,B.q,B.r,0),B.cG,A.b3("Describe your event in natural language and let Gemini AI match, reason, and build the perfect crew for you.",p,p,p,p,A.e0(p,p,A.ae(B.d.aK(229.5),B.i.u()>>>16&255,B.i.u()>>>8&255,B.i.u()&255),p,p,p,p,p,p,p,p,14,p,p,p,p,1.4,!0,p,p,p,p,p,p,p,p),p,p),B.cH,A.d9(A.avz(B.oY,B.XZ,new A.amF(a),A.lW(p,p,B.i,p,p,p,0,p,p,B.w,p,p,p,p,p,p,p,p,p,p)),p,1/0)],n),B.W,B.q,B.r),B.m,p,p,new A.bo(p,p,p,s,r,B.IM,B.H),p,p,p,B.f0,p,p,p),B.ef,A.bK(A.b([q.N0(B.HC,new A.amG(),"30 Available","My Crews"),B.iJ,q.N0(B.Hz,new A.amH(),"3 Active","My Events")],n),B.x,B.q,B.r,0),B.ef,A.bK(B.L1,B.x,B.b4,B.r,0),B.cG,q.MY("\u20b946,578","5 Crew Members","15 September 2026 \u2022 Pune","Confirmed",B.a7,"Wedding Event"),B.ca,q.MY("\u20b935,000","3 Crew Members","24 May 2026 \u2022 Bengaluru","Planning",B.nV,"Tech Conference")],n),B.W,B.q,B.r),p,B.ay,B.bu,p,B.ar)
 r=q.d
 return A.uf(o,n,new A.xe(B.K9,new A.amI(q),r,B.Cg,B.aj,B.O,B.ax,p))},
 N0(a,b,c,d){var s=null,r=A.bL(16),q=A.bL(16),p=A.eE(B.bX,1)
@@ -43261,7 +43261,7 @@ $1(a){return new A.mZ(new A.amA(this.a,this.b),null)},
 $S:121}
 A.amA.prototype={
 $2(a,b){var s=null,r=A.bL(16),q=A.bK(B.L6,B.x,B.q,B.r,0),p=this.b,o=A.awA(p,A.a5B(s,new A.fH(4,A.bL(12),B.jF),s,B.hz,s,s,s,s,!0,s,s,s,s,s,s,B.dC,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,!0,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s),s,B.B_),n=A.bL(12),m=A.eE(A.ae(B.d.aK(76.5),B.w.u()>>>16&255,B.w.u()>>>8&255,B.w.u()&255),1),l=this.a,k=t.p
-n=A.cb(A.b([B.B1,B.eg,o,B.cH,B.XD,B.eg,A.bC(s,new A.t2(A.azQ(B.aj,!0,B.pj,new A.amx(l,b),B.AT,l.a,t.N),s),B.m,s,s,new A.bo(B.dC,s,m,n,s,s,B.H),s,s,s,B.oh,s,s,s)],k),B.W,B.q,B.bd)
+n=A.cb(A.b([B.B1,B.eg,o,B.cH,B.XD,B.eg,A.bC(s,new A.t2(A.azQ(B.aj,!0,B.po,new A.amx(l,b),B.AT,l.a,t.N),s),B.m,s,s,new A.bo(B.dC,s,m,n,s,s,B.H),s,s,s,B.oh,s,s,s)],k),B.W,B.q,B.bd)
 return A.ayJ(A.b([A.agp(B.B2,new A.amy(a),s),A.K5(B.Xr,new A.amz(l,p,a),A.lW(s,s,B.w,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s))],k),B.aj,n,new A.cg(r,B.o),q)},
 $S:122}
 A.amx.prototype={
@@ -43372,7 +43372,7 @@ return new A.bv(B.hx,A.bK(o,B.x,B.q,B.r,0),q)},
 $S:341}
 A.u5.prototype={
 H(a){var s=this,r=null,q=t.p,p=A.Ir(A.b([A.th(r,r,B.I5,r,r,new A.abD(s,a),r,r,r)],q),B.XS),o=A.bL(16),n=A.eE(A.ae(102,B.w.u()>>>16&255,B.w.u()>>>8&255,B.w.u()&255),1),m=s.c
-q=A.b([B.Y3,B.cG,A.bC(r,A.bK(A.b([s.Dj("Total Estimated","\u20b9"+B.d.a5(m.c,0),B.O),A.bC(r,r,B.m,B.dD,r,r,r,30,r,r,r,r,1),s.Dj("Budget","\u20b9"+B.d.a5(m.d,0),B.ax),A.bC(r,r,B.m,B.dD,r,r,r,30,r,r,r,r,1),s.Dj("Remaining","\u20b9"+B.d.a5(m.e,0),B.a7)],q),B.x,B.b4,B.r,0),B.m,r,r,new A.bo(B.aj,r,n,o,r,r,B.H),r,r,r,B.bu,r,r,r),B.fI],q)
+q=A.b([B.Y2,B.cG,A.bC(r,A.bK(A.b([s.Dj("Total Estimated","\u20b9"+B.d.a5(m.c,0),B.O),A.bC(r,r,B.m,B.dD,r,r,r,30,r,r,r,r,1),s.Dj("Budget","\u20b9"+B.d.a5(m.d,0),B.ax),A.bC(r,r,B.m,B.dD,r,r,r,30,r,r,r,r,1),s.Dj("Remaining","\u20b9"+B.d.a5(m.e,0),B.a7)],q),B.x,B.b4,B.r,0),B.m,r,r,new A.bo(B.aj,r,n,o,r,r,B.H),r,r,r,B.bu,r,r,r),B.fI],q)
 m=m.b
 B.b.N(q,new A.a1(m,new A.abE(s,a),A.X(m).i("a1<1,e>")))
 q.push(B.ef)
@@ -43507,7 +43507,7 @@ j=j.b
 B.b.N(k,new A.a1(j,new A.agl(s),A.X(j).i("a1<1,e>")))
 k.push(B.cH)
 p=A.ae(p,B.w.u()>>>16&255,B.w.u()>>>8&255,B.w.u()&255)
-k.push(A.bK(A.b([A.fy(A.awd(B.Y0,s.e,A.aa6(r,r,r,r,r,r,r,r,r,B.O,r,r,B.og,r,new A.cg(A.bL(12),B.o),new A.aE(p,1,B.v,-1),r,r,r,r)),1),B.ee,A.fy(A.K5(B.XL,s.d,A.lW(r,r,B.a7,r,r,r,r,r,r,B.i,r,r,B.og,r,new A.cg(A.bL(12),B.o),r,r,r,r,r)),2)],m),B.x,B.q,B.r,0))
+k.push(A.bK(A.b([A.fy(A.awd(B.Y_,s.e,A.aa6(r,r,r,r,r,r,r,r,r,B.O,r,r,B.og,r,new A.cg(A.bL(12),B.o),new A.aE(p,1,B.v,-1),r,r,r,r)),1),B.ee,A.fy(A.K5(B.XL,s.d,A.lW(r,r,B.a7,r,r,r,r,r,r,B.i,r,r,B.og,r,new A.cg(A.bL(12),B.o),r,r,r,r,r)),2)],m),B.x,B.q,B.r,0))
 return A.bC(r,A.cb(k,B.W,B.q,B.r),B.m,r,r,new A.bo(B.aj,r,o,q,n,r,B.H),r,r,B.f_,B.bu,r,r,r)},
 Dk(a,b,c){var s=null
 return A.cb(A.b([A.b3(a,s,s,s,s,B.VD,s,s),B.fJ,A.b3(b,s,s,s,s,A.e0(s,s,c,s,s,s,s,s,s,s,s,14,s,s,B.a3,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.x,B.q,B.r)},
@@ -47776,7 +47776,7 @@ n=o.e
 o=o.cx
 r=q.gadb()
 q.a.toString
-return new A.D8(p,p,p,new A.anC(),p,p,p,p,p,n,B.MS,p,p,p,B.pm,q.gadj(),o,p,B.Vb,s,p,r,p,p,B.pf,!1,!1,p,p,p,new A.oL(q,t.bT))},
+return new A.D8(p,p,p,new A.anC(),p,p,p,p,p,n,B.MS,p,p,p,B.pl,q.gadj(),o,p,B.Vb,s,p,r,p,p,B.pf,!1,!1,p,p,p,new A.oL(q,t.bT))},
 H(a){var s,r=this.a5z(a)
 this.a.toString
 s=this.d
@@ -50538,7 +50538,7 @@ return new A.vQ(s.d,s.c,null)},
 $S:230}
 A.vQ.prototype={
 H(a){var s=null
-return A.aAc(A.aB3(B.N,s,s,B.pm,A.aFl(),s,new A.ao5(this),s,A.b([new A.qA(this.d,s,s)],t.Ql),!1,s,B.Yn))}}
+return A.aAc(A.aB3(B.N,s,s,B.pl,A.aFl(),s,new A.ao5(this),s,A.b([new A.qA(this.d,s,s)],t.Ql),!1,s,B.Yn))}}
 A.ao5.prototype={
 $2(a,b){this.a.c.$1(b)
 return!1},
@@ -60819,8 +60819,8 @@ s=r.P
 r.e4=s==null?null:s.gL8()
 a.a=!1},
 qa(a,b,c){var s,r,q,p,o=this
-o.ij=A.aBF(o.ij,B.pl)
-o.ik=A.aBF(o.ik,B.pl)
+o.ij=A.aBF(o.ij,B.pk)
+o.ik=A.aBF(o.ik,B.pk)
 s=o.ij
 r=s!=null&&!s.gad(s)
 s=o.ik
@@ -69979,7 +69979,7 @@ A.h8.prototype={
 J(){return"ModifierKey."+this.b}}
 A.AL.prototype={
 gaqo(){var s,r,q=A.t(t.xS,t.Di)
-for(s=0;s<9;++s){r=B.po[s]
+for(s=0;s<9;++s){r=B.pn[s]
 if(this.apy(r))q.m(0,r,B.dS)}return q}}
 A.kJ.prototype={}
 A.ab9.prototype={
@@ -70017,7 +70017,7 @@ i=$.cY
 if(i!=null)i.$1(new A.aX(r,q,"services library",j,p,!1))}}return!1},
 ahG(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=a1.c,f=g.gaqo(),e=t.v3,d=A.t(e,t.d),c=A.aw(e),b=this.d,a=A.dU(new A.bj(b,A.l(b).i("bj<1>")),e),a0=a1 instanceof A.mF
 if(a0)a.D(0,g.gjU())
-for(s=g.a,r=null,q=0;q<9;++q){p=B.po[q]
+for(s=g.a,r=null,q=0;q<9;++q){p=B.pn[q]
 o=$.aGt()
 n=o.h(0,new A.d3(p,B.ci))
 if(n==null)continue
@@ -78494,7 +78494,7 @@ grd(){var s=this.a,r=this.b
 if(r==null)s=null
 else{r.a.toString
 s=!0}return s===!0},
-gvx(){return B.pn},
+gvx(){return B.pm},
 lE(){},
 mL(){var s=A.awF()
 s.cp(new A.acV(this),t.H)
@@ -79167,7 +79167,7 @@ H(a){var s,r,q=this,p=null,o=q.gaaU(),n=A.m0(a),m=q.bT$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.gL()==null){r=q.gMI()
-r=J.mc(r.slice(0),A.X(r).c)}else r=B.pn
+r=J.mc(r.slice(0),A.X(r).c)}else r=B.pm
 return A.aAc(new A.cO(new A.a9S(q,a),A.zH(B.c1,new A.Ie(!1,A.avG(A.oB(!0,p,A.Pb(m,new A.tO(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),n),p),o,q.gadJ(),p,p,o),p,t.w3))}}
 A.a9N.prototype={
 $1(a){var s=this.a.c
@@ -93323,8 +93323,8 @@ B.ax=new A.x(1,0.6980392156862745,0.7450980392156863,0.7647058823529411,B.e)
 B.ej=new A.j(!0,B.ax,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Xw=new A.bg("All primary candidates have 100% verified availability.",null,B.ej,null,null,null,null,null,null,null)
 B.Ee=new A.ig(B.ad,null,null,B.Xw,null)
-B.XZ=new A.bg("No alternative options required for this budget.",null,B.ej,null,null,null,null,null,null,null)
-B.Ef=new A.ig(B.ad,null,null,B.XZ,null)
+B.XY=new A.bg("No alternative options required for this budget.",null,B.ej,null,null,null,null,null,null,null)
+B.Ef=new A.ig(B.ad,null,null,B.XY,null)
 B.Eg=new A.ob(null)
 B.Eh=new A.xu(null,null,null,null,null,null,null,null,null)
 B.dz=new A.rx(0,"none")
@@ -94084,20 +94084,15 @@ B.D3=new A.lx()
 B.ir=new A.ND(1,"page")
 B.is=new A.eu(B.bk,B.ir)
 B.Kt=s([B.D3,B.is],A.ar("A<aS>"))
-B.Y1=new A.bg("\ud83c\udf1f Gemini 3.6 Flash (Primary Reasoning)",null,null,null,null,null,null,null,null,null)
-B.Ge=new A.os("gemini-3.6-flash",B.Y1,B.du,null,t.b7)
-B.XU=new A.bg("\u26a1 Gemini 3.5 Flash (Fast Execution)",null,null,null,null,null,null,null,null,null)
-B.Gd=new A.os("gemini-3.5-flash",B.XU,B.du,null,t.b7)
-B.pj=s([B.Ge,B.Gd],A.ar("A<os<C>>"))
 B.KD=s([],t.QP)
-B.pl=s([],A.ar("A<aUo>"))
+B.pk=s([],A.ar("A<aUo>"))
 B.KH=s([],t.D)
 B.Kx=s([],t.fJ)
 B.KI=s([],t.ER)
 B.a0m=s([],t.ss)
-B.pm=s([],t.tc)
+B.pl=s([],t.tc)
 B.hW=s([],t.jl)
-B.pn=s([],t.wi)
+B.pm=s([],t.wi)
 B.KA=s([],A.ar("A<jq<@>>"))
 B.la=s([],t.AO)
 B.KC=s([],t.D1)
@@ -94106,7 +94101,7 @@ B.KG=s([],t.Lx)
 B.Ky=s([],t.AS)
 B.Kz=s([],t.p)
 B.Kw=s([],t.t)
-B.pk=s([],t.ee)
+B.pj=s([],t.ee)
 B.KE=s([],t.XS)
 B.ei=new A.j(!0,B.bZ,null,null,null,null,18,B.a3,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.XE=new A.bg("Wedding Event",null,B.ei,null,null,null,null,null,null,null)
@@ -94133,7 +94128,7 @@ B.lt=new A.h8(5,"numLockModifier")
 B.lu=new A.h8(6,"scrollLockModifier")
 B.lv=new A.h8(7,"functionModifier")
 B.vt=new A.h8(8,"symbolModifier")
-B.po=s([B.dT,B.dU,B.dV,B.dW,B.ls,B.lt,B.lu,B.lv,B.vt],A.ar("A<h8>"))
+B.pn=s([B.dT,B.dU,B.dV,B.dW,B.ls,B.lt,B.lu,B.lv,B.vt],A.ar("A<h8>"))
 B.Xs=new A.bg("Upcoming Events",null,B.ei,null,null,null,null,null,null,null)
 B.cC=new A.fA(600)
 B.U_=new A.j(!0,B.O,null,null,null,null,14,B.cC,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -94143,8 +94138,13 @@ B.lb=s([!0,!1],t.HZ)
 B.L5=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
 B.HM=new A.bD(983396,"MaterialIcons",!1)
 B.HV=new A.c1(B.HM,null,B.O,null,null)
-B.Y2=new A.bg("App & Model Settings",null,B.AS,null,null,null,null,null,null,null)
-B.L6=s([B.HV,B.bQ,B.Y2],t.p)
+B.Y1=new A.bg("App & Model Settings",null,B.AS,null,null,null,null,null,null,null)
+B.L6=s([B.HV,B.bQ,B.Y1],t.p)
+B.Y4=new A.bg("\u26a1 Gemini 3.5 Flash (Default - Fast)",null,null,null,null,null,null,null,null,null)
+B.Ge=new A.os("gemini-3.5-flash",B.Y4,B.du,null,t.b7)
+B.Y0=new A.bg("\ud83c\udf1f Gemini 3.6 Flash (Deep Reasoning)",null,null,null,null,null,null,null,null,null)
+B.Gd=new A.os("gemini-3.6-flash",B.Y0,B.du,null,t.b7)
+B.po=s([B.Ge,B.Gd],A.ar("A<os<C>>"))
 B.l0=new A.fA(100)
 B.He=new A.fA(200)
 B.Hf=new A.fA(300)
@@ -94154,8 +94154,8 @@ B.oK=new A.fA(900)
 B.L7=s([B.l0,B.He,B.Hf,B.u,B.af,B.cC,B.a3,B.Hg,B.oK],A.ar("A<fA>"))
 B.Y6=new A.bg("\u2728 Recommended Team",null,B.ei,null,null,null,null,null,null,null)
 B.VV=new A.j(!0,B.O,null,null,null,null,12,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.XW=new A.bg("Intelligently matched by Gemini LLM",null,B.VV,null,null,null,null,null,null,null)
-B.L8=s([B.Y6,B.XW],t.p)
+B.XV=new A.bg("Intelligently matched by Gemini LLM",null,B.VV,null,null,null,null,null,null,null)
+B.L8=s([B.Y6,B.XV],t.p)
 B.L9=s([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
 B.Pn=new A.a7(0.7078,8.3194)
 B.Pf=new A.a7(0.7895,2.4523)
@@ -95965,15 +95965,15 @@ B.XQ=new A.bg("Gemini AI is Reasoning...",null,B.WM,null,null,null,null,null,nul
 B.XR=new A.bg("Event Summary",null,null,null,null,null,null,null,null,null)
 B.XS=new A.bg("\u2728 Recommended Team",null,null,null,null,null,null,null,null,null)
 B.WN=new A.j(!0,B.a7,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.XV=new A.bg("Summary",null,B.WN,null,null,null,null,null,null,null)
+B.XU=new A.bg("Summary",null,B.WN,null,null,null,null,null,null,null)
 B.B1=new A.bg("Backend Server IP:",null,B.mi,null,null,null,null,null,null,null)
-B.XX=new A.bg("\u2190 Change Team",null,null,null,null,null,null,null,null,null)
-B.XY=new A.bg("Confirm Booking",null,null,null,null,null,null,null,null,null)
-B.Y_=new A.bg("\u2728 Start Planning",null,null,null,null,null,null,null,null,null)
-B.Y0=new A.bg("\u26a1 Alternatives",null,null,null,null,null,null,null,null,null)
+B.XW=new A.bg("\u2190 Change Team",null,null,null,null,null,null,null,null,null)
+B.XX=new A.bg("Confirm Booking",null,null,null,null,null,null,null,null,null)
+B.XZ=new A.bg("\u2728 Start Planning",null,null,null,null,null,null,null,null,null)
+B.Y_=new A.bg("\u26a1 Alternatives",null,null,null,null,null,null,null,null,null)
 B.B2=new A.bg("Cancel",null,B.ej,null,null,null,null,null,null,null)
-B.Y3=new A.bg("Best match for your event",null,B.AN,null,null,null,null,null,null,null)
-B.Y4=new A.bg("Back to Home",null,null,null,null,null,null,null,null,null)
+B.Y2=new A.bg("Best match for your event",null,B.AN,null,null,null,null,null,null,null)
+B.Y3=new A.bg("Back to Home",null,null,null,null,null,null,null,null,null)
 B.Y7=new A.bg("Analyzing candidate experience & database availability",null,B.AZ,null,null,null,null,null,null,null)
 B.Y8=new A.bg("Total Agreed Rate:",null,B.AW,null,null,null,null,null,null,null)
 B.Y9=new A.bg("Apply Changes",null,null,null,null,null,null,null,null,null)
@@ -96352,7 +96352,7 @@ $.aEc=A.t(t.N,A.ar("aJ<mU>(C,b7<C,C>)"))
 $.aEs=A.t(t.C_,t.lT)
 $.hj=null
 $.ZN="https://crewmatchai.onrender.com"
-$.nX="gemini-3.6-flash"
+$.nX="gemini-3.5-flash"
 $.aKM=A.b([],A.ar("A<~(C)>"))
 $.cY=A.aSg()
 $.avE=0
