@@ -111,17 +111,70 @@ class _ChatScreenState extends State<ChatScreen> {
 
   void _extractDataFromText(String text) {
     final lower = text.toLowerCase();
-    if (lower.contains("wedding")) _eventState.eventType = "Wedding";
-    if (lower.contains("pune")) _eventState.location = "Pune";
-    if (lower.contains("mumbai")) _eventState.location = "Mumbai";
-    if (lower.contains("500") || lower.contains("300")) {
-      _eventState.guestCount = 500;
+
+    // Event Type
+    if (lower.contains("wedding") || lower.contains("marriage") || lower.contains("shaadi")) {
+      _eventState.eventType = "Wedding";
+    } else if (lower.contains("corporate") || lower.contains("conference") || lower.contains("summit")) {
+      _eventState.eventType = "Corporate";
+    } else if (lower.contains("birthday") || lower.contains("bday")) {
+      _eventState.eventType = "Birthday";
+    } else if (lower.contains("concert") || lower.contains("festival") || lower.contains("party")) {
+      _eventState.eventType = "Party";
     }
-    if (lower.contains("50000") || lower.contains("60000") || lower.contains("50,000")) {
-      _eventState.totalBudget = 50000;
+
+    // Location
+    if (lower.contains("pune")) {
+      _eventState.location = "Pune";
+    } else if (lower.contains("mumbai")) {
+      _eventState.location = "Mumbai";
+    } else if (lower.contains("bengaluru") || lower.contains("bangalore")) {
+      _eventState.location = "Bengaluru";
+    } else if (lower.contains("delhi")) {
+      _eventState.location = "Delhi";
+    } else {
+      final locMatch = RegExp(r'\b(?:in|at)\s+([A-Z][a-z]+)\b').firstMatch(text);
+      if (locMatch != null) {
+        _eventState.location = locMatch.group(1);
+      }
     }
-    if (lower.contains("15 september") || lower.contains("03.03.2026") || lower.contains("sep 15")) {
-      _eventState.eventDate = "15 September 2026";
+
+    // Dynamic Guest Count
+    final guestMatch = RegExp(r'(\d{1,5})\s*(?:guests?|people|attendees|pax|members)?', caseSensitive: false).firstMatch(text);
+    if (guestMatch != null) {
+      final val = int.tryParse(guestMatch.group(1)!);
+      if (val != null && val >= 10 && val <= 10000) {
+        _eventState.guestCount = val;
+      }
+    }
+
+    // Dynamic Budget (e.g. 50000, 50k, 50,000, 1.5 lakh)
+    final kMatch = RegExp(r'(\d+(?:\.\d+)?)\s*k\b', caseSensitive: false).firstMatch(text);
+    final lakhMatch = RegExp(r'(\d+(?:\.\d+)?)\s*(?:lakh|lac)\b', caseSensitive: false).firstMatch(text);
+    final budgetMatch = RegExp(r'(?:budget|₹|inr|rs\.?)\s*:?\s*(\d[\d,]*)', caseSensitive: false).firstMatch(text);
+
+    if (kMatch != null) {
+      _eventState.totalBudget = (double.tryParse(kMatch.group(1)!) ?? 50) * 1000;
+    } else if (lakhMatch != null) {
+      _eventState.totalBudget = (double.tryParse(lakhMatch.group(1)!) ?? 1) * 100000;
+    } else if (budgetMatch != null) {
+      final clean = budgetMatch.group(1)!.replaceAll(',', '');
+      final val = double.tryParse(clean);
+      if (val != null && val >= 1000) _eventState.totalBudget = val;
+    } else {
+      final numMatch = RegExp(r'\b(\d{4,7})\b').firstMatch(text);
+      if (numMatch != null) {
+        final val = double.tryParse(numMatch.group(1)!);
+        if (val != null && val >= 5000) _eventState.totalBudget = val;
+      }
+    }
+
+    // Date extraction
+    final dateMatch = RegExp(r'\b(\d{1,2}(?:st|nd|rd|th)?\s+(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)(?:\s+\d{4})?)\b', caseSensitive: false).firstMatch(text);
+    if (dateMatch != null) {
+      _eventState.eventDate = dateMatch.group(1);
+    } else if (lower.contains("tomorrow")) {
+      _eventState.eventDate = "Tomorrow";
     }
   }
 
