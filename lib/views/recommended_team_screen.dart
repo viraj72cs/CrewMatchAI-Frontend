@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../models/api_models.dart';
-import '../services/api_service.dart';
 import '../theme/app_theme.dart';
 import 'booking_confirm_screen.dart';
 import 'widgets/alternatives_sheet.dart';
