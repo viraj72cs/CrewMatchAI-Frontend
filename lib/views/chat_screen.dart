@@ -26,9 +26,7 @@ class _ChatScreenState extends State<ChatScreen> {
   
   String? _sessionId;
   bool _isLoading = false;
-  EventState _eventState = EventState();
-  RecommendationResult? _currentRecommendation;
-  BookingResult? _currentBookingResult;
+  final EventState _eventState = EventState();
 
   @override
   void initState() {
@@ -85,14 +83,6 @@ class _ChatScreenState extends State<ChatScreen> {
 
       // Extract details if present
       _extractDataFromText(userMessageText);
-
-      if (response.recommendation != null) {
-        _currentRecommendation = response.recommendation;
-      }
-
-      if (response.bookingResult != null) {
-        _currentBookingResult = response.bookingResult;
-      }
 
       // Add AI response text
       _messages.add(

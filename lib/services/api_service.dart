@@ -106,4 +106,62 @@ class ApiService {
     }
     return null;
   }
+
+  /// Fetch all crew profiles with skills for the Crews Directory screen.
+  static Future<List<Map<String, dynamic>>> fetchCrews() async {
+    final url = Uri.parse("$baseUrl/crews");
+    try {
+      final response = await http.get(url).timeout(const Duration(seconds: 30));
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        if (data['success'] == true && data['crews'] != null) {
+          return List<Map<String, dynamic>>.from(data['crews']);
+        }
+      }
+    } catch (e) {
+      print("Fetch crews error: $e");
+    }
+    return [];
+  }
+
+  /// Fetch all events with booking rosters for the Events Management screen.
+  static Future<List<Map<String, dynamic>>> fetchEvents() async {
+    final url = Uri.parse("$baseUrl/events");
+    try {
+      final response = await http.get(url).timeout(const Duration(seconds: 30));
+      if (response.statusCode == 200) {
+        final data = jsonDecode(response.body);
+        if (data['success'] == true && data['events'] != null) {
+          return List<Map<String, dynamic>>.from(data['events']);
+        }
+      }
+    } catch (e) {
+      print("Fetch events error: $e");
+    }
+    return [];
+  }
+
+  /// Ping the backend server and return latency in milliseconds.
+  static Future<Map<String, dynamic>> pingServer() async {
+    final url = Uri.parse("$baseUrl/");
+    final stopwatch = Stopwatch()..start();
+    try {
+      final response = await http.get(url).timeout(const Duration(seconds: 10));
+      stopwatch.stop();
+      if (response.statusCode == 200) {
+        return {
+          "connected": true,
+          "latencyMs": stopwatch.elapsedMilliseconds,
+          "status": "Connected",
+        };
+      }
+    } catch (e) {
+      stopwatch.stop();
+    }
+    return {
+      "connected": false,
+      "latencyMs": 0,
+      "status": "Unreachable",
+    };
+  }
 }

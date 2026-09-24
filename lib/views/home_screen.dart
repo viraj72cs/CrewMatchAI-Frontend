@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../services/api_service.dart';
 import 'chat_screen.dart';
+import 'events_screen.dart';
+import 'crews_screen.dart';
+import 'profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -142,174 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Greeting Banner
-            const Text(
-              "Good morning 👋",
-              style: TextStyle(
-                color: AppTheme.textDarkSecondary,
-                fontSize: 16,
-              ),
-            ),
-            const SizedBox(height: 4),
-            const Text(
-              "What are you planning today?",
-              style: TextStyle(
-                color: AppTheme.textDarkPrimary,
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 16),
-
-            // AI Event Planner Card (Primary Action)
-            Container(
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [AppTheme.primary, Color(0xFF4834D4)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                    color: AppTheme.primary.withOpacity(0.3),
-                    blurRadius: 16,
-                    offset: const Offset(0, 6),
-                  )
-                ],
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
-                          shape: BoxShape.circle,
-                        ),
-                        child: const Icon(Icons.smart_toy_rounded,
-                            color: Colors.white, size: 24),
-                      ),
-                      const SizedBox(width: 12),
-                      const Text(
-                        "AI Event Planner",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    "Describe your event in natural language and let Gemini AI match, reason, and build the perfect crew for you.",
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.9),
-                      fontSize: 14,
-                      height: 1.4,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const ChatScreen(),
-                          ),
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        foregroundColor: AppTheme.primary,
-                        elevation: 0,
-                      ),
-                      icon: const Icon(Icons.auto_awesome_rounded),
-                      label: const Text("✨ Start Planning"),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-            const SizedBox(height: 24),
-
-            // Quick Actions
-            Row(
-              children: [
-                _buildQuickActionCard(
-                  icon: Icons.groups_rounded,
-                  title: "My Crews",
-                  subtitle: "30 Available",
-                  onTap: () {},
-                ),
-                const SizedBox(width: 12),
-                _buildQuickActionCard(
-                  icon: Icons.event_available_rounded,
-                  title: "My Events",
-                  subtitle: "3 Active",
-                  onTap: () {},
-                ),
-              ],
-            ),
-
-            const SizedBox(height: 24),
-
-            // Upcoming Events Section
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text(
-                  "Upcoming Events",
-                  style: TextStyle(
-                    color: AppTheme.textDarkPrimary,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  "View All",
-                  style: TextStyle(
-                    color: AppTheme.primaryLight,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 12),
-
-            _buildEventCard(
-              title: "Wedding Event",
-              date: "15 September 2026 • Pune",
-              status: "Confirmed",
-              statusColor: AppTheme.success,
-              crewCount: "5 Crew Members",
-              cost: "₹46,578",
-            ),
-            const SizedBox(height: 10),
-            _buildEventCard(
-              title: "Tech Conference",
-              date: "24 May 2026 • Bengaluru",
-              status: "Planning",
-              statusColor: AppTheme.warning,
-              crewCount: "3 Crew Members",
-              cost: "₹35,000",
-            ),
-          ],
-        ),
-      ),
+      body: _buildCurrentTab(),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) => setState(() => _currentIndex = index),
@@ -333,6 +169,194 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person_rounded),
             label: "Profile",
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCurrentTab() {
+    switch (_currentIndex) {
+      case 1:
+        return const EventsScreen();
+      case 2:
+        return const CrewsScreen();
+      case 3:
+        return const ProfileScreen();
+      case 0:
+      default:
+        return _buildHomeDashboard();
+    }
+  }
+
+  Widget _buildHomeDashboard() {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Greeting Banner
+          const Text(
+            "Good morning 👋",
+            style: TextStyle(
+              color: AppTheme.textDarkSecondary,
+              fontSize: 16,
+            ),
+          ),
+          const SizedBox(height: 4),
+          const Text(
+            "What are you planning today?",
+            style: TextStyle(
+              color: AppTheme.textDarkPrimary,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // AI Event Planner Card (Primary Action)
+          Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [AppTheme.primary, Color(0xFF4834D4)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: AppTheme.primary.withOpacity(0.3),
+                  blurRadius: 16,
+                  offset: const Offset(0, 6),
+                )
+              ],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.smart_toy_rounded,
+                          color: Colors.white, size: 24),
+                    ),
+                    const SizedBox(width: 12),
+                    const Text(
+                      "AI Event Planner",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Text(
+                  "Describe your event in natural language and let Gemini AI match, reason, and build the perfect crew for you.",
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(0.9),
+                    fontSize: 14,
+                    height: 1.4,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ChatScreen(),
+                        ),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: AppTheme.primary,
+                      elevation: 0,
+                    ),
+                    icon: const Icon(Icons.auto_awesome_rounded),
+                    label: const Text("✨ Start Planning"),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          const SizedBox(height: 24),
+
+          // Quick Actions
+          Row(
+            children: [
+              _buildQuickActionCard(
+                icon: Icons.groups_rounded,
+                title: "My Crews",
+                subtitle: "Browse Specialists",
+                onTap: () => setState(() => _currentIndex = 2),
+              ),
+              const SizedBox(width: 12),
+              _buildQuickActionCard(
+                icon: Icons.event_available_rounded,
+                title: "My Events",
+                subtitle: "View History",
+                onTap: () => setState(() => _currentIndex = 1),
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 24),
+
+          // Upcoming Events Section
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                "Upcoming Events",
+                style: TextStyle(
+                  color: AppTheme.textDarkPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              GestureDetector(
+                onTap: () => setState(() => _currentIndex = 1),
+                child: const Text(
+                  "View All",
+                  style: TextStyle(
+                    color: AppTheme.primaryLight,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+
+          _buildEventCard(
+            title: "Wedding Event",
+            date: "15 September 2026 • Pune",
+            status: "Confirmed",
+            statusColor: AppTheme.success,
+            crewCount: "5 Crew Members",
+            cost: "₹46,578",
+          ),
+          const SizedBox(height: 10),
+          _buildEventCard(
+            title: "Tech Conference",
+            date: "24 May 2026 • Bengaluru",
+            status: "Planning",
+            statusColor: AppTheme.warning,
+            crewCount: "3 Crew Members",
+            cost: "₹35,000",
           ),
         ],
       ),
