@@ -15,8 +15,8 @@ class ApiService {
     baseUrl = url.endsWith('/') ? url.substring(0, url.length - 1) : url;
   }
 
-  // Currently active model (defaults to gemini-3.5-flash)
-  static String selectedModel = "gemini-3.5-flash";
+  // Currently active model (defaults to gemini-3.5-flash-lite)
+  static String selectedModel = "gemini-3.5-flash-lite";
 
   static Future<ChatResponse> sendMessage({
     required String message,

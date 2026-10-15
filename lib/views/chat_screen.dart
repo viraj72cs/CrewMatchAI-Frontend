@@ -219,12 +219,20 @@ class _ChatScreenState extends State<ChatScreen> {
                     style: const TextStyle(color: Colors.white, fontSize: 13),
                     items: const [
                       DropdownMenuItem(
-                        value: "gemini-3.5-flash",
-                        child: Text("⚡ Gemini 3.5 Flash (Default - Fast)"),
+                        value: "gemini-3.5-flash-lite",
+                        child: Text("⚡ Gemini 3.5 Flash-Lite (Fastest)"),
+                      ),
+                      DropdownMenuItem(
+                        value: "gemini-3.1-flash-lite",
+                        child: Text("🚀 Gemini 3.1 Flash-Lite (High Speed)"),
+                      ),
+                      DropdownMenuItem(
+                        value: "gemini-3.8-flash",
+                        child: Text("🌟 Gemini 3.8 Flash (Latest Flagship)"),
                       ),
                       DropdownMenuItem(
                         value: "gemini-3.6-flash",
-                        child: Text("🌟 Gemini 3.6 Flash (Deep Reasoning)"),
+                        child: Text("🧠 Gemini 3.6 Flash (Deep Reasoning)"),
                       ),
                     ],
                     onChanged: (val) {

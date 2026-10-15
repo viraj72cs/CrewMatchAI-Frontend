@@ -214,16 +214,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
             child: Column(
               children: [
                 _buildModelTile(
-                  'gemini-3.5-flash',
-                  '⚡ Gemini 3.5 Flash',
-                  'Default — Fast inference, quick tool calling',
+                  'gemini-3.5-flash-lite',
+                  '⚡ Gemini 3.5 Flash-Lite',
+                  'Recommended — Ultra-fast inference, instant responses',
+                ),
+                const Divider(
+                    color: Color(0xFF2E2A50), height: 1, indent: 16, endIndent: 16),
+                _buildModelTile(
+                  'gemini-3.1-flash-lite',
+                  '🚀 Gemini 3.1 Flash-Lite',
+                  'High speed, reliable candidate matching',
+                ),
+                const Divider(
+                    color: Color(0xFF2E2A50), height: 1, indent: 16, endIndent: 16),
+                _buildModelTile(
+                  'gemini-3.8-flash',
+                  '🌟 Gemini 3.8 Flash',
+                  'Latest flagship Flash reasoning engine',
                 ),
                 const Divider(
                     color: Color(0xFF2E2A50), height: 1, indent: 16, endIndent: 16),
                 _buildModelTile(
                   'gemini-3.6-flash',
-                  '🌟 Gemini 3.6 Flash',
-                  'Deep reasoning, extended multi-step analysis',
+                  '🧠 Gemini 3.6 Flash',
+                  'Deep reasoning (higher global traffic latency)',
                 ),
               ],
             ),
